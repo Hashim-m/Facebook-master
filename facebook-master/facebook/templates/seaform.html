@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="container">
+<div style="margin-left:25%">
+<div class="w3-container">
+     
+    <table class="table">
+      <tr class="text-center"><h1 class="text-center"> Listings</h1></tr>
+    <tr>
+        <th>Source</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Rating</th>
+        <th>Listed</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Facebook</td>
+        <td>{{ user.username }}</td>
+        <td>abcd</td>
+        <td>12345</td>
+        <td>3/5</td>
+        <td>No</td>
+        <td><button type="button" class="btn btn-primary">Update</button></td>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>{{ user.username }}</td>
+      <td>abcd</td>
+      <td>12345</td>
+      <td>3/5</td>
+      <td>No</td>
+      <td><button type="button" class="btn btn-primary">Update</button></td>
+  </tr>
+  <tr>
+    <td>Yahoo!</td>
+    <td>{{ user.username }}</td>
+    <td>abcd</td>
+    <td>12345</td>
+    <td>3/5</td>
+    <td>No</td>
+    <td><button type="button" class="btn btn-primary">Update</button></td>
+ </tr>
+  <tr>
+    <td>Foursquare</td>
+    <td>{{ user.username }}</td>
+    <td>abcd</td>
+    <td>12345</td>
+    <td>3/5</td>
+    <td>No</td>
+    <td><button type="button" class="btn btn-primary">Update</button></td>
+  </tr>
+</table>
+</div>
+
+</div>
+</div>
+{% endblock%}

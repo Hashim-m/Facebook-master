@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook - log in or sign up</title>
+    <link rel="shortcut icon" href="C:\Users\arun\Desktop\New folder\face.png" type="image/x-icon">
+    <style>
+        .body {
+            background-color:#f1f2f6;
+            
+        }
+
+        .login-form {
+            width: 400px;
+            margin-right: 12%;
+            font-size: 15px;
+            float: right;
+            margin-top: 10px;
+            padding: 5px;
+
+        }
+        input {
+            border-color: white;
+            }
+
+        .login-form form {
+            margin-bottom: 20px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            
+            
+        }
+
+        .login-form h2 {
+            margin: 0 0 15px;
+        }
+
+        .form-control,
+        .btn {
+            min-height: 48px;
+            border-radius: 4px;
+            width: 98%;
+            
+
+        }
+        
+.form-control::placeholder {
+  color: #5e6e7c;
+  font-size: 16px;
+  padding-left: 5%;
+  opacity: 1;
+}
+.form-control a {
+ margin-left: 15px;
+}
+
+        .login-form a {
+            text-align: center;
+            margin-left: 25%;  
+            color: black;
+
+        }
+        
+
+        .btn {
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            display: block;
+            width: 100%;
+
+        }
+
+        .btn1 {
+            font-size: 15px;
+            font-weight: bold;
+            padding: 15px;
+            width: 65%;
+            margin-left: 18%;
+            border-radius: 5px;
+            border: white;
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        #footer_wrapper {
+            background-color: rgba(255, 255, 255, 0.918);
+            position: absolute;
+            bottom: 0px;
+            color: rgba(0, 0, 0, 0.589);
+        }
+
+        #footer1 a{
+            color: rgba(0, 0, 0, 0.589);
+            padding: 7px;
+            font-size: 15px;
+        }
+        #footer2 a{
+            color: rgba(0, 0, 0, 0.589);
+            padding: 7px;
+            font-size: 15px;
+        }
+        #footer1 {
+            margin-left: 25%;
+            position: relative;
+            padding: 5px 0;
+    
+        }
+
+        #footer2 {
+            margin-left: 25%;
+            margin-right: 15%;
+            position: relative;
+            padding: 5px 0;
+
+
+        }
+
+        .p {
+            margin-left: 8%;
+            margin-top: 6%;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="p">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width="50%" height="40%">
+        <br>
+        <pre><h2 style="font-size: 30px; font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;">   Facebook helps you connect and share 
+   with the people in your life.</h2></pre>
+    </div> 
+
+    <div class="login-form ">
+        <form action="" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email adress or Phone number" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn"><span style="font-size: 20px;"> <a href="{% url 'social:begin' 'facebook' %}">Facebook</a></span></button>
+            </div>
+            <div class="form-group a">
+                <a href="#" style="margin-left: 35%;" >Forgot Password?</a>
+                <br>
+                <hr>
+                <br>
+                <button type="submit" class="btn1 btn-success btn-block"><span style="font-size: 20px;">Create New
+                        Account</span></button>
+            </div>
+        </form>
+        <p class="text-center"><a  href="#">Create a Page</a> for a celebrity, band or business.</p>
+
+    </div>
+<br>
+<br>
+    <div id="footer_wrapper">
+        <div id="footer1">
+            English (UK) <a href=""> हिन्दी </a><a href=""> ਪੰਜਾਬੀ </a><a href=""> اردو </a><a href=""> தமிழ் </a><a
+                href=""> বাংলা </a><a href=""> मराठी </a><a href=""> తెలుగు </a><a href=""> ગુજરાતી </a><a href="">
+                ಕನ್ನಡ </a><a href=""> മലയാളം </a>
+    
+        </div>
+        <hr>
+        <div id="footer2">
+            <a href=" #"> Sign Up </a><a href="#"> Log In </a><a href="#"> Messenger </a><a href="#"> DotNetTec </a><a
+                href="#"> Mobile </a><a href="#"> Find Friends </a>
+            <a href="#"> Badges </a><a href="#"> People </a><a href="#"> Pages </a><a href="#"> Places </a><a href="#">
+                Games </a><a href="#"> Locations </a>
+            <a href=""> Celebrities </a><a href=""> Groups </a><a href=""> Moments </a><a href=""> About </a>
+            <a href=""> Create Advert </a><a href=""> Create Page </a><a href=""> Developers </a>
+            <a href=""> Careers </a><a href=""> Privacy </a><a href=""> Cookies </a><a href=""> Ads </a><a href="">
+                Terms </a><a href=""> Help </a>
+        </div>
+    </div>
+</body>
+</body>
